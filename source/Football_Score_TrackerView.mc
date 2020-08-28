@@ -33,6 +33,16 @@ class Football_Score_TrackerView extends WatchUi.View {
 	        });
     
     }
+    
+    function secondsToTimeString(totalSeconds) {
+		var hours = (totalSeconds / 3600).toNumber();
+		var minutes = ((totalSeconds - hours * 3600) / 60).toNumber();
+		var seconds = totalSeconds - hours * 3600 - minutes * 60;
+		var timeString = Lang.format("$1$:$2$:$3$", [hours.format("%02d"),
+			minutes.format("%02d"),
+			seconds.format("%02d")]);
+		return timeString;
+	}
 	
 	
 
@@ -51,7 +61,7 @@ class Football_Score_TrackerView extends WatchUi.View {
 	        });
 	        
 	    timer = new WatchUi.Text({
-	        :text=>App.getApp().getProperty("timer") + " ",
+	        :text=>secondsToTimeString(App.getApp().getProperty("timer")),
 	        :color=>Graphics.COLOR_BLACK,
 	        :font=>Graphics.FONT_LARGE,
 	        :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
