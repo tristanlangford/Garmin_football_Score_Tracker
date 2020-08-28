@@ -5,8 +5,9 @@ using Toybox.Application as App;
 class Football_Score_TrackerView extends WatchUi.View {
 
 	hidden var myText;
-	var score1 = App.getApp().getProperty("team1Score");
-	var score2 = App.getApp().getProperty("team2Score");
+	var teams;
+	var timer;
+	
 
     function initialize() {
         View.initialize();
@@ -23,6 +24,22 @@ class Football_Score_TrackerView extends WatchUi.View {
     // loading resources into memory.
     function onShow() {
     
+    teams = new WatchUi.Text({
+	            :text=>App.getApp().getProperty("team1") + "   " + App.getApp().getProperty("team2"),
+	            :color=>Graphics.COLOR_WHITE,
+	            :font=>Graphics.FONT_LARGE,
+	            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
+	            :locY=>50
+	        });
+	        
+    timer = new WatchUi.Text({
+        :text=>"00:00",
+        :color=>Graphics.COLOR_WHITE,
+        :font=>Graphics.FONT_LARGE,
+        :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
+        :locY=>150
+    });
+    
     }
 	
 	
@@ -38,10 +55,12 @@ class Football_Score_TrackerView extends WatchUi.View {
 	            :color=>Graphics.COLOR_WHITE,
 	            :font=>Graphics.FONT_LARGE,
 	            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
-	            :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+	            :locY=>100
 	        });
         
         myText.draw(dc);
+        teams.draw(dc);
+        timer.draw(dc);
         
        
     }

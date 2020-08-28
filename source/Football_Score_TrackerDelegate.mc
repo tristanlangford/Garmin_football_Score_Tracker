@@ -15,11 +15,13 @@ class Football_Score_TrackerDelegate extends WatchUi.BehaviorDelegate {
     
         function onKey(keyEvent) {
         
+        System.println(keyEvent.getType());
+        
         if ( keyEvent.getKey() == 13 ) {
         	App.getApp().setProperty("team1Score", App.getApp().getProperty("team1Score") + 1);
         } else if ( keyEvent.getKey() == 8 ) {
         	App.getApp().setProperty("team2Score", App.getApp().getProperty("team2Score") + 1);
-        }
+        } 
         WatchUi.requestUpdate();
         return true;
     }
