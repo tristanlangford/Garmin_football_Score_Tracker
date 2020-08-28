@@ -17,6 +17,8 @@ class Football_Score_TrackerApp extends Application.AppBase {
     
     App.getApp().setProperty("team1", "Smith");
     App.getApp().setProperty("team2", "ROW  ");
+    
+    App.getApp().setProperty("timer", 0);
     }
 
     // onStop() is called when your application is exiting
