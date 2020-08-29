@@ -15,8 +15,8 @@ class Football_Score_TrackerApp extends Application.AppBase {
     App.getApp().setProperty("team1Score", 0);
     App.getApp().setProperty("team2Score", 0);
     
-    App.getApp().setProperty("team1", "Smith");
-    App.getApp().setProperty("team2", "ROW  ");
+    App.getApp().setProperty("team1", "BLUE");
+    App.getApp().setProperty("team2", "RED  ");
     
     App.getApp().setProperty("timer", 0);
     App.getApp().setProperty("timerStarted", false);

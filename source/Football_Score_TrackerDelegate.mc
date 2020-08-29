@@ -21,6 +21,20 @@ class Football_Score_TrackerDelegate extends WatchUi.BehaviorDelegate {
     		App.getApp().setProperty("timerStarted", true);
     		WatchUi.requestUpdate();
     	}
+    	
+    	function stopTimer() {
+    		myTimer.stop();
+    		App.getApp().setProperty("timerStarted", false);
+    		WatchUi.requestUpdate();
+    	}
+    	
+    	function timerAction() {
+    		if (App.getApp().getProperty("timerStarted")) {
+    			stopTimer();
+   			} else {
+   				startTimer();
+   			}
+    	}
     
         function onKey(keyEvent) {
         
@@ -30,11 +44,8 @@ class Football_Score_TrackerDelegate extends WatchUi.BehaviorDelegate {
         	App.getApp().setProperty("team1Score", App.getApp().getProperty("team1Score") + 1);
         } else if ( keyEvent.getKey() == 8 ) {
         	App.getApp().setProperty("team2Score", App.getApp().getProperty("team2Score") + 1);
-        } else if ( keyEvent.getKey() == 4 && App.getApp().getProperty("timerStarted") == false) {
-    		myTimer.start(method(:startTimer), 1000, true);
-        } else if ( keyEvent.getKey() == 4 && App.getApp().getProperty("timerStarted")) {
-    		myTimer.stop();
-    		App.getApp().setProperty("timerStarted", false);
+        } else if (keyEvent.getKey() == 4) {
+    		timerAction();
         }
         WatchUi.requestUpdate();
         return true;
