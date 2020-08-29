@@ -36,11 +36,9 @@ class Football_Score_TrackerView extends WatchUi.View {
     }
     
     function secondsToTimeString(totalSeconds) {
-		var hours = (totalSeconds / 3600).toNumber();
-		var minutes = ((totalSeconds - hours * 3600) / 60).toNumber();
-		var seconds = totalSeconds - hours * 3600 - minutes * 60;
-		var timeString = Lang.format("$1$:$2$:$3$", [hours.format("%02d"),
-			minutes.format("%02d"),
+		var minutes = (totalSeconds / 60).toNumber();
+		var seconds = totalSeconds - minutes * 60;
+		var timeString = Lang.format("$1$:$2$", [minutes.format("%02d"),
 			seconds.format("%02d")]);
 		return timeString;
 	}
