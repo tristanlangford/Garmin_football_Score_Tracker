@@ -29,6 +29,8 @@ class Football_Score_TrackerApp extends Application.AppBase {
     App.getApp().setProperty("timer", 0);
     App.getApp().setProperty("timerStarted", false);
     
+    App.getApp().setProperty("backPressed", false);
+    
     myTimer.start(method(:update), 1000, true);
     }
 
