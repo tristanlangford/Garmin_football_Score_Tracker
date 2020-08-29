@@ -1,6 +1,7 @@
 using Toybox.Application;
 using Toybox.WatchUi;
 using Toybox.Application as App;
+using Toybox.Timer;
 
 
 class Football_Score_TrackerApp extends Application.AppBase {
@@ -8,10 +9,17 @@ class Football_Score_TrackerApp extends Application.AppBase {
     function initialize() {
         AppBase.initialize();
     }
+    
+    function update() {
+    	WatchUi.requestUpdate();
+    }
 
 
     // onStart() is called on application start up
     function onStart(state) {
+    
+    var myTimer = new Timer.Timer();
+    
     App.getApp().setProperty("team1Score", 0);
     App.getApp().setProperty("team2Score", 0);
     
@@ -20,6 +28,8 @@ class Football_Score_TrackerApp extends Application.AppBase {
     
     App.getApp().setProperty("timer", 0);
     App.getApp().setProperty("timerStarted", false);
+    
+    myTimer.start(method(:update), 1000, true);
     }
 
     // onStop() is called when your application is exiting

@@ -1,6 +1,7 @@
 using Toybox.WatchUi;
 using Toybox.Application as App;
 using Toybox.Timer;
+using Toybox.System;
 
 
 class Football_Score_TrackerDelegate extends WatchUi.BehaviorDelegate {
@@ -24,7 +25,6 @@ class Football_Score_TrackerDelegate extends WatchUi.BehaviorDelegate {
     	function stopTimer() {
     		myTimer.stop();
     		App.getApp().setProperty("timerStarted", false);
-    		WatchUi.requestUpdate();
     	}
     	
     	function timerAction() {
@@ -36,14 +36,14 @@ class Football_Score_TrackerDelegate extends WatchUi.BehaviorDelegate {
    			}
     	}
     
-        function onKey(keyEvent) {      
+        function onKey(keyEvent) {    
 	        if (keyEvent.getKey() == 13) {
 	        	App.getApp().setProperty("team1Score", App.getApp().getProperty("team1Score") + 1);
 	        } else if (keyEvent.getKey() == 8) {
 	        	App.getApp().setProperty("team2Score", App.getApp().getProperty("team2Score") + 1);
 	        } else if (keyEvent.getKey() == 4) {
 	    		timerAction();
-	        }
+	        } 
 	        WatchUi.requestUpdate();
 	        return true;
     	}

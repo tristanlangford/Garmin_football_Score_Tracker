@@ -1,3 +1,5 @@
 <menu id="MainMenu">
-    <menu-item id="Title" label="@Strings.AppName" />
+	
+    <menu-item id="quit" label="@Strings.Quit" />
+    <menu-item id="reset" label="@Strings.Reset" />
 </menu>

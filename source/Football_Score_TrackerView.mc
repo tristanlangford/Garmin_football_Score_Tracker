@@ -58,7 +58,7 @@ class Football_Score_TrackerView extends WatchUi.View {
         var clock = new WatchUi.Text({
         	:text=> myTime.hour.format("%02d") + ":" + myTime.min.format("%02d"),
             :color=>Graphics.COLOR_BLACK,
-            :font=>Graphics.FONT_LARGE,
+            :font=>Graphics.FONT_SMALL,
             :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
             :locY=>15
         });
