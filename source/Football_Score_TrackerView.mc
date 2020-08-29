@@ -1,5 +1,6 @@
 using Toybox.WatchUi;
 using Toybox.Timer;
+using Toybox.System;
 using Toybox.Application as App;
 
 class Football_Score_TrackerView extends WatchUi.View {
@@ -52,13 +53,23 @@ class Football_Score_TrackerView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         dc.clear();
         
+        var myTime = System.getClockTime(); // ClockTime object
+        
+        var clock = new WatchUi.Text({
+        	:text=> myTime.hour.format("%02d") + ":" + myTime.min.format("%02d"),
+            :color=>Graphics.COLOR_BLACK,
+            :font=>Graphics.FONT_LARGE,
+            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
+            :locY=>15
+        });
+        
         myText = new WatchUi.Text({
-	            :text=>App.getApp().getProperty("team1Score") + " : " + App.getApp().getProperty("team2Score"),
-	            :color=>Graphics.COLOR_BLACK,
-	            :font=>Graphics.FONT_LARGE,
-	            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
-	            :locY=>100
-	        });
+            :text=>App.getApp().getProperty("team1Score") + " : " + App.getApp().getProperty("team2Score"),
+            :color=>Graphics.COLOR_BLACK,
+            :font=>Graphics.FONT_LARGE,
+            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
+            :locY=>100
+        });
 	        
 	    timer = new WatchUi.Text({
 	        :text=>secondsToTimeString(App.getApp().getProperty("timer")),
@@ -71,6 +82,7 @@ class Football_Score_TrackerView extends WatchUi.View {
         myText.draw(dc);
         teams.draw(dc);
         timer.draw(dc);
+        clock.draw(dc);
         
        
     }
