@@ -12,7 +12,7 @@ class Football_Score_TrackerMenuDelegate extends WatchUi.MenuInputDelegate {
     	App.getApp().setProperty("team1Score", 0);
     	App.getApp().setProperty("team2Score", 0);
     	
-    	App.getApp().setProperty("timer", 0);
+    	App.getApp().setProperty("timer", 3600);
     	App.getApp().setProperty("timerStarted", false);
     }
 
@@ -23,8 +23,10 @@ class Football_Score_TrackerMenuDelegate extends WatchUi.MenuInputDelegate {
             reset();
         } else if (item == :changeTeamName) {
         	WatchUi.pushView(new Rez.Menus.ChooseTeam(), new Football_Score_TrackerChooseTeamMenuDelegate(), WatchUi.SLIDE_LEFT);
-        return true;
+        } else if (item == :setTimer) {
+        	WatchUi.pushView(new Football_Score_TrackerSetTimerView(), new Football_Score_TrackerSetTimerDelegate(), WatchUi.SLIDE_LEFT);
         }
+    	return true;
     }
 
 }

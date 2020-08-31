@@ -20,13 +20,27 @@ class Football_Score_TrackerApp extends Application.AppBase {
     
     var myTimer = new Timer.Timer();
     
+    if (App.Storage.getValue("timer") == null) {
+    	App.getApp().setProperty("timer", 3600);
+    } else {
+    	App.getApp().setProperty("timer", App.Storage.getValue("timer"));
+    }
+    
     App.getApp().setProperty("team1Score", 0);
     App.getApp().setProperty("team2Score", 0);
     
-    App.getApp().setProperty("team1", "SMITH");
-    App.getApp().setProperty("team2", "ROW  ");
+    if (App.Storage.getValue("team1") == null) {
+    	App.getApp().setProperty("team1", "SMITH");
+    } else {
+    	App.getApp().setProperty("team1", App.Storage.getValue("team1"));
+    }
     
-    App.getApp().setProperty("timer", 0);
+    if (App.Storage.getValue("team12") == null) {
+    	App.getApp().setProperty("team2", "ROW  ");
+    } else {
+    	App.getApp().setProperty("team2", App.Storage.getValue("team2"));
+    }
+    
     App.getApp().setProperty("timerStarted", false);
     
     App.getApp().setProperty("backPressed", false);
@@ -36,6 +50,10 @@ class Football_Score_TrackerApp extends Application.AppBase {
 
     // onStop() is called when your application is exiting
     function onStop(state) {
+    	App.Storage.setValue("timer", App.getApp().getProperty("timer"));
+    	App.Storage.setValue("team1", App.getApp().getProperty("team1"));
+    	App.Storage.setValue("team2", App.getApp().getProperty("team2"));
+    
     }
 
     // Return the initial view of your application here

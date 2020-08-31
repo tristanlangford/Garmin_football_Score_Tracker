@@ -18,7 +18,20 @@ class Football_Score_TrackerDelegate extends WatchUi.BehaviorDelegate {
     var myTimer = new Timer.Timer();
     
     	function startTimer() {
-    		App.getApp().setProperty("timer", App.getApp().getProperty("timer") + 1);
+    		var vibeData;
+    		if(App.getApp().getProperty("timer") > 0){
+    			App.getApp().setProperty("timer", App.getApp().getProperty("timer") - 1);
+    		} else {
+    			vibeData =
+				    [
+				        new Attention.VibeProfile(50, 2000), // On for two seconds
+				        new Attention.VibeProfile(0, 2000),  // Off for two seconds
+				        new Attention.VibeProfile(50, 2000), // On for two seconds
+				        new Attention.VibeProfile(0, 2000),  // Off for two seconds
+				        new Attention.VibeProfile(50, 2000)  // on for two seconds
+				    ];
+				Attention.vibrate(vibeData);
+    		}
     		WatchUi.requestUpdate();
     	}
     	
