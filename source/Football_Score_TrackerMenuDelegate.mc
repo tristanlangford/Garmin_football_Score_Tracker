@@ -21,6 +21,9 @@ class Football_Score_TrackerMenuDelegate extends WatchUi.MenuInputDelegate {
             System.exit();
         } else if (item == :reset) {
             reset();
+        } else if (item == :changeTeamName) {
+        	WatchUi.pushView(new Rez.Menus.ChooseTeam(), new Football_Score_TrackerChooseTeamMenuDelegate(), WatchUi.SLIDE_LEFT);
+        return true;
         }
     }
 

@@ -1,0 +1,4 @@
+<menu id="ChooseTeam">
+	<menu-item id="team1" label="@Strings.Team1" />
+	<menu-item id="team2" label="@Strings.Team2" />
+</menu>

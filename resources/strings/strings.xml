@@ -5,4 +5,10 @@
 
     <string id="Quit">Quit</string>
     <string id="Reset">Reset</string>
+    
+    <string id="ChangeTeamName">Change Team Name</string>
+    
+    <string id="Team1">Team1</string>
+    <string id="Team2">Team2</string>
+    
 </strings>

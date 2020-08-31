@@ -1,5 +1,5 @@
 <menu id="MainMenu">
-	
+	<menu-item id="changeTeamName" label="@Strings.ChangeTeamName" />
+	<menu-item id="reset" label="@Strings.Reset" />
     <menu-item id="quit" label="@Strings.Quit" />
-    <menu-item id="reset" label="@Strings.Reset" />
 </menu>
