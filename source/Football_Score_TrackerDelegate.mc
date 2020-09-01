@@ -6,8 +6,6 @@ using Toybox.System;
 
 class Football_Score_TrackerDelegate extends WatchUi.BehaviorDelegate {
 
-	var currentInterval = App.Storage.getValue("timer") - App.Storage.getValue("interval");
-
     function initialize() {
         BehaviorDelegate.initialize();
     }
@@ -41,7 +39,7 @@ class Football_Score_TrackerDelegate extends WatchUi.BehaviorDelegate {
     	
     	function triggerInterval() {
     		var vibeData1;
-    		if (App.getApp().getProperty("timer") == currentInterval) {
+    		if (App.getApp().getProperty("timer") == App.getApp().getProperty("currentInterval")) {
 	    		vibeData1 =
 					    [
 					        new Attention.VibeProfile(50, 2000), // On for two seconds
@@ -49,7 +47,9 @@ class Football_Score_TrackerDelegate extends WatchUi.BehaviorDelegate {
 					        new Attention.VibeProfile(50, 2000), // On for two seconds
 					    ];
 				Attention.vibrate(vibeData1);
-    			currentInterval -= App.Storage.getValue("interval");
+				if (App.getApp().getProperty("currentInterval") - App.Storage.getValue("interval") > 0) {
+    				App.getApp().setProperty("currentInterval", App.getApp().getProperty("currentInterval") - App.Storage.getValue("interval"));
+    			}
     		}
     	}
     	

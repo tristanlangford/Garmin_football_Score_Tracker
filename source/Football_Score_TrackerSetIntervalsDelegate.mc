@@ -31,7 +31,11 @@ class Football_Score_TrackerSetIntervalDelegate extends WatchUi.BehaviorDelegate
     }
     
     function timerPlus() {
-    	if (interval >= 600 && (interval + 300) < (App.Storage.getValue("timer") / 2)) {
+    	if (interval % 60 != 0 && interval < 10) {
+    		interval += 30;
+    	} else if (interval % 60 !=0 && interval > 10) {
+    		interval += 150;
+    	} else if (interval >= 600 && (interval + 300) < (App.Storage.getValue("timer") / 2)) {
     		interval += 300;
     	} else if (interval < 600) {
     		interval += 60;
@@ -58,9 +62,10 @@ class Football_Score_TrackerSetIntervalDelegate extends WatchUi.BehaviorDelegate
     	
 	function onSelect() {
 		App.Storage.setValue("interval", interval);
+		App.getApp().setProperty("currentInterval", App.Storage.getValue("timer") - interval);
 		var vibeData =
 				    [
-				        new Attention.VibeProfile(50, 2000), // On for two seconds
+				        new Attention.VibeProfile(50, 500), // On for two seconds
 				    ];
 		Attention.vibrate(vibeData);
 		return true;
@@ -103,16 +108,6 @@ class Football_Score_TrackerSetIntervalView extends WatchUi.View {
             :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
             :locY=>40
         });
-    
-    timer = new WatchUi.Text({
-	            :text=>secondsToTimeString(interval),
-	            :color=>Graphics.COLOR_BLACK,
-	            :font=>Graphics.FONT_NUMBER_HOT,
-	            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
-	            :locY=>WatchUi.LAYOUT_VALIGN_CENTER
-	        });
-	        
-    
     }
 	
     // Update the view

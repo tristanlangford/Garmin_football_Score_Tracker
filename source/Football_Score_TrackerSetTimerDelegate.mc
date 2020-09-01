@@ -32,7 +32,7 @@ class Football_Score_TrackerSetTimerDelegate extends WatchUi.BehaviorDelegate {
 	function onSelect() {
 		var vibeData =
 				    [
-				        new Attention.VibeProfile(50, 2000), // On for two seconds
+				        new Attention.VibeProfile(50, 500), // On for two seconds
 				    ];
 		Attention.vibrate(vibeData);
 		 App.Storage.setValue("timer", setTimer);
@@ -42,6 +42,7 @@ class Football_Score_TrackerSetTimerDelegate extends WatchUi.BehaviorDelegate {
 		} else if (App.Storage.getValue("timer") == 300) {
 			App.Storage.setValue("interval", 0);
 		} 
+		App.getApp().setProperty("currentInterval", setTimer - App.Storage.getValue("interval"));
 	}
 
 }
@@ -82,15 +83,6 @@ class Football_Score_TrackerSetTimerView extends WatchUi.View {
             :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
             :locY=>40
         });
-    
-    timer = new WatchUi.Text({
-	            :text=>secondsToTimeString(setTimer),
-	            :color=>Graphics.COLOR_BLACK,
-	            :font=>Graphics.FONT_NUMBER_HOT,
-	            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
-	            :locY=>WatchUi.LAYOUT_VALIGN_CENTER
-	        });
-    
     }
 	
     // Update the view

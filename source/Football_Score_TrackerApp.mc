@@ -20,10 +20,16 @@ class Football_Score_TrackerApp extends Application.AppBase {
     
     var myTimer = new Timer.Timer();
     
+    if (App.Storage.getValue("interval") == null) {
+    	App.Storage.setValue("interval", 0);
+    }
+    
     if (App.Storage.getValue("timer") == null) {
     	App.getApp().setProperty("timer", 3600);
+    	App.getApp().setProperty("currentInterval", 1800);
     } else {
     	App.getApp().setProperty("timer", App.Storage.getValue("timer"));
+    	App.getApp().setProperty("currentInterval", App.Storage.getValue("timer") - App.Storage.getValue("interval"));
     }
     
     App.getApp().setProperty("team1Score", 0);
