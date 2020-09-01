@@ -106,7 +106,7 @@
         <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerSetIntervalsDelegate.mc" id="27" lineNum="132" pc="268438667" symbol="onUpdate"/>
         <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerSetIntervalsDelegate.mc" id="27" lineNum="133" pc="268438687" symbol="onUpdate"/>
         <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerSetIntervalsDelegate.mc" id="28" lineNum="140" pc="268438708" symbol="onHide"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerSetIntervalsDelegate.mc" id="28" lineNum="6" pc="268443716" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerSetIntervalsDelegate.mc" id="28" lineNum="6" pc="268443652" symbol="&lt;init&gt;"/>
         <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerApp.mc" id="30" lineNum="9" pc="268438713" symbol="initialize"/>
         <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerApp.mc" id="30" lineNum="10" pc="268438717" symbol="initialize"/>
         <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerApp.mc" id="31" lineNum="13" pc="268438736" symbol="update"/>
@@ -192,74 +192,74 @@
         <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerSetTimerDelegate.mc" id="54" lineNum="110" pc="268441072" symbol="onUpdate"/>
         <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerSetTimerDelegate.mc" id="54" lineNum="111" pc="268441092" symbol="onUpdate"/>
         <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerSetTimerDelegate.mc" id="55" lineNum="118" pc="268441113" symbol="onHide"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerSetTimerDelegate.mc" id="55" lineNum="6" pc="268443750" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="57" lineNum="9" pc="268441118" symbol="initialize"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="57" lineNum="10" pc="268441122" symbol="initialize"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="58" lineNum="13" pc="268441141" symbol="onMenu"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="58" lineNum="14" pc="268441145" symbol="onMenu"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="58" lineNum="15" pc="268441229" symbol="onMenu"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="20" pc="268441233" symbol="startTimer"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="21" pc="268441237" symbol="startTimer"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="22" pc="268441249" symbol="startTimer"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="23" pc="268441249" symbol="startTimer"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="24" pc="268441287" symbol="startTimer"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="26" pc="268441355" symbol="startTimer"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="27" pc="268441367" symbol="startTimer"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="35" pc="268441605" symbol="startTimer"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="37" pc="268441625" symbol="startTimer"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="60" lineNum="40" pc="268441642" symbol="triggerInterval"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="60" lineNum="41" pc="268441646" symbol="triggerInterval"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="60" lineNum="42" pc="268441646" symbol="triggerInterval"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="60" lineNum="43" pc="268441722" symbol="triggerInterval"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="60" lineNum="44" pc="268441726" symbol="triggerInterval"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="60" lineNum="45" pc="268441791" symbol="triggerInterval"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="60" lineNum="51" pc="268441937" symbol="triggerInterval"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="61" lineNum="55" pc="268441961" symbol="stopTimer"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="61" lineNum="56" pc="268441965" symbol="stopTimer"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="61" lineNum="57" pc="268441983" symbol="stopTimer"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="62" lineNum="60" pc="268442016" symbol="timerAction"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="62" lineNum="61" pc="268442020" symbol="timerAction"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="62" lineNum="62" pc="268442052" symbol="timerAction"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="62" lineNum="64" pc="268442067" symbol="timerAction"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="62" lineNum="65" pc="268442108" symbol="timerAction"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="63" lineNum="69" pc="268442141" symbol="onKeyPressed"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="63" lineNum="70" pc="268442145" symbol="onKeyPressed"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="63" lineNum="71" pc="268442165" symbol="onKeyPressed"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="64" lineNum="75" pc="268442201" symbol="onKeyReleased"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="64" lineNum="76" pc="268442205" symbol="onKeyReleased"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="64" lineNum="77" pc="268442225" symbol="onKeyReleased"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="81" pc="268442261" symbol="onKey"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="82" pc="268442265" symbol="onKey"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="83" pc="268442323" symbol="onKey"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="84" pc="268442391" symbol="onKey"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="85" pc="268442449" symbol="onKey"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="86" pc="268442517" symbol="onKey"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="87" pc="268442537" symbol="onKey"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="88" pc="268442552" symbol="onKey"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="89" pc="268442607" symbol="onKey"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="90" pc="268442675" symbol="onKey"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="91" pc="268442730" symbol="onKey"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="93" pc="268442798" symbol="onKey"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="94" pc="268442814" symbol="onKey"/>
-        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="18" pc="268443890" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="71" lineNum="15" pc="268442818" symbol="MainLayout"/>
-        <entry filename="Rez" id="71" lineNum="17" pc="268442830" symbol="MainLayout"/>
-        <entry filename="Rez" id="71" lineNum="19" pc="268442982" symbol="MainLayout"/>
-        <entry filename="Rez" id="72" lineNum="28" pc="268443000" symbol="SetTimerLayout"/>
-        <entry filename="Rez" id="72" lineNum="30" pc="268443012" symbol="SetTimerLayout"/>
-        <entry filename="Rez" id="72" lineNum="32" pc="268443164" symbol="SetTimerLayout"/>
-        <entry filename="Rez" id="75" lineNum="45" pc="268443182" symbol="initialize"/>
-        <entry filename="Rez" id="75" lineNum="46" pc="268443186" symbol="initialize"/>
-        <entry filename="Rez" id="75" lineNum="47" pc="268443204" symbol="initialize"/>
-        <entry filename="Rez" id="75" lineNum="48" pc="268443260" symbol="initialize"/>
-        <entry filename="Rez" id="77" lineNum="60" pc="268443317" symbol="initialize"/>
-        <entry filename="Rez" id="77" lineNum="61" pc="268443321" symbol="initialize"/>
-        <entry filename="Rez" id="77" lineNum="62" pc="268443339" symbol="initialize"/>
-        <entry filename="Rez" id="77" lineNum="63" pc="268443395" symbol="initialize"/>
-        <entry filename="Rez" id="77" lineNum="64" pc="268443451" symbol="initialize"/>
-        <entry filename="Rez" id="77" lineNum="65" pc="268443507" symbol="initialize"/>
-        <entry filename="Rez" id="77" lineNum="66" pc="268443563" symbol="initialize"/>
-        <entry filename="Rez" id="77" lineNum="67" pc="268443619" symbol="initialize"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerSetTimerDelegate.mc" id="55" lineNum="6" pc="268443686" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="57" lineNum="11" pc="268441118" symbol="initialize"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="57" lineNum="12" pc="268441122" symbol="initialize"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="58" lineNum="15" pc="268441141" symbol="onMenu"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="58" lineNum="16" pc="268441145" symbol="onMenu"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="58" lineNum="17" pc="268441229" symbol="onMenu"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="22" pc="268441233" symbol="startTimer"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="23" pc="268441237" symbol="startTimer"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="24" pc="268441249" symbol="startTimer"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="25" pc="268441249" symbol="startTimer"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="26" pc="268441287" symbol="startTimer"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="28" pc="268441355" symbol="startTimer"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="29" pc="268441367" symbol="startTimer"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="37" pc="268441605" symbol="startTimer"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="59" lineNum="39" pc="268441625" symbol="startTimer"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="60" lineNum="42" pc="268441642" symbol="triggerInterval"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="60" lineNum="43" pc="268441646" symbol="triggerInterval"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="60" lineNum="44" pc="268441646" symbol="triggerInterval"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="60" lineNum="45" pc="268441687" symbol="triggerInterval"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="60" lineNum="51" pc="268441833" symbol="triggerInterval"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="60" lineNum="52" pc="268441853" symbol="triggerInterval"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="61" lineNum="56" pc="268441897" symbol="stopTimer"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="61" lineNum="57" pc="268441901" symbol="stopTimer"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="61" lineNum="58" pc="268441919" symbol="stopTimer"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="62" lineNum="61" pc="268441952" symbol="timerAction"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="62" lineNum="62" pc="268441956" symbol="timerAction"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="62" lineNum="63" pc="268441988" symbol="timerAction"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="62" lineNum="65" pc="268442003" symbol="timerAction"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="62" lineNum="66" pc="268442044" symbol="timerAction"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="63" lineNum="70" pc="268442077" symbol="onKeyPressed"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="63" lineNum="71" pc="268442081" symbol="onKeyPressed"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="63" lineNum="72" pc="268442101" symbol="onKeyPressed"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="64" lineNum="76" pc="268442137" symbol="onKeyReleased"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="64" lineNum="77" pc="268442141" symbol="onKeyReleased"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="64" lineNum="78" pc="268442161" symbol="onKeyReleased"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="82" pc="268442197" symbol="onKey"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="83" pc="268442201" symbol="onKey"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="84" pc="268442259" symbol="onKey"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="85" pc="268442327" symbol="onKey"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="86" pc="268442385" symbol="onKey"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="87" pc="268442453" symbol="onKey"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="88" pc="268442473" symbol="onKey"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="89" pc="268442488" symbol="onKey"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="90" pc="268442543" symbol="onKey"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="91" pc="268442611" symbol="onKey"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="92" pc="268442666" symbol="onKey"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="94" pc="268442734" symbol="onKey"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="95" pc="268442750" symbol="onKey"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="9" pc="268443853" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/tristan/eclipse-workspace/Football_Score_Tracker/source/Football_Score_TrackerDelegate.mc" id="65" lineNum="20" pc="268443887" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="71" lineNum="15" pc="268442754" symbol="MainLayout"/>
+        <entry filename="Rez" id="71" lineNum="17" pc="268442766" symbol="MainLayout"/>
+        <entry filename="Rez" id="71" lineNum="19" pc="268442918" symbol="MainLayout"/>
+        <entry filename="Rez" id="72" lineNum="28" pc="268442936" symbol="SetTimerLayout"/>
+        <entry filename="Rez" id="72" lineNum="30" pc="268442948" symbol="SetTimerLayout"/>
+        <entry filename="Rez" id="72" lineNum="32" pc="268443100" symbol="SetTimerLayout"/>
+        <entry filename="Rez" id="75" lineNum="45" pc="268443118" symbol="initialize"/>
+        <entry filename="Rez" id="75" lineNum="46" pc="268443122" symbol="initialize"/>
+        <entry filename="Rez" id="75" lineNum="47" pc="268443140" symbol="initialize"/>
+        <entry filename="Rez" id="75" lineNum="48" pc="268443196" symbol="initialize"/>
+        <entry filename="Rez" id="77" lineNum="60" pc="268443253" symbol="initialize"/>
+        <entry filename="Rez" id="77" lineNum="61" pc="268443257" symbol="initialize"/>
+        <entry filename="Rez" id="77" lineNum="62" pc="268443275" symbol="initialize"/>
+        <entry filename="Rez" id="77" lineNum="63" pc="268443331" symbol="initialize"/>
+        <entry filename="Rez" id="77" lineNum="64" pc="268443387" symbol="initialize"/>
+        <entry filename="Rez" id="77" lineNum="65" pc="268443443" symbol="initialize"/>
+        <entry filename="Rez" id="77" lineNum="66" pc="268443499" symbol="initialize"/>
+        <entry filename="Rez" id="77" lineNum="67" pc="268443555" symbol="initialize"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -270,10 +270,11 @@
         <entry field="true" id="22" symbol="timer"/>
         <entry field="true" id="37" symbol="Team2"/>
         <entry field="true" id="38" symbol="Team1"/>
-        <entry id="52" symbol="quit"/>
+        <entry id="53" symbol="quit"/>
+        <entry field="true" id="40" symbol="currentInterval"/>
         <entry id="13" object="true" symbol="Football_Score_TrackerSetIntervalView"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="51" symbol="teamName"/>
+        <entry field="true" id="52" symbol="teamName"/>
         <entry id="30" method="true" symbol="SetTimerLayout"/>
         <entry id="8389554" method="true" symbol="onKeyReleased"/>
         <entry field="true" id="32" symbol="ResetTimer"/>
@@ -285,12 +286,12 @@
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="8389081" method="true" symbol="onBack"/>
-        <entry id="47" method="true" symbol="timerPlus"/>
+        <entry id="48" method="true" symbol="timerPlus"/>
         <entry field="true" id="34" symbol="Quit"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="45" symbol="teams"/>
-        <entry id="56" symbol="team2"/>
-        <entry id="55" symbol="team1"/>
+        <entry field="true" id="46" symbol="teams"/>
+        <entry id="57" symbol="team2"/>
+        <entry id="56" symbol="team1"/>
         <entry field="true" id="11" symbol="interval"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
@@ -304,7 +305,7 @@
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry id="8389349" symbol="justification"/>
         <entry id="23" method="true" symbol="secondsToTimeString"/>
-        <entry id="49" method="true" symbol="resetAll"/>
+        <entry id="50" method="true" symbol="resetAll"/>
         <entry field="true" id="21" symbol="myText"/>
         <entry id="10" object="true" symbol="Football_Score_TrackerMenuDelegate"/>
         <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
@@ -312,9 +313,9 @@
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
         <entry field="true" id="35" symbol="SetTimer"/>
         <entry id="28" object="true" symbol="MainMenu"/>
-        <entry id="46" method="true" symbol="timerMinus"/>
+        <entry id="47" method="true" symbol="timerMinus"/>
         <entry id="8388644" module="true" symbol="System"/>
-        <entry id="53" symbol="setIntervals"/>
+        <entry id="54" symbol="setIntervals"/>
         <entry id="8389619" method="true" symbol="onSelect"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
         <entry id="18" object="true" symbol="Football_Score_TrackerSetTimerDelegate"/>
@@ -324,22 +325,22 @@
         <entry field="true" id="26" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
-        <entry id="41" method="true" symbol="startTimer"/>
+        <entry id="42" method="true" symbol="startTimer"/>
         <entry id="20" object="true" symbol="Football_Score_TrackerDelegate"/>
-        <entry id="42" method="true" symbol="triggerInterval"/>
-        <entry id="43" method="true" symbol="stopTimer"/>
+        <entry id="43" method="true" symbol="triggerInterval"/>
+        <entry id="44" method="true" symbol="stopTimer"/>
         <entry id="8389350" module="true" symbol="globals"/>
-        <entry field="true" id="40" symbol="myTimer"/>
+        <entry field="true" id="41" symbol="myTimer"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
-        <entry id="44" method="true" symbol="timerAction"/>
+        <entry id="45" method="true" symbol="timerAction"/>
         <entry field="true" id="17" symbol="setTimer"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry id="54" symbol="changeTeamName"/>
+        <entry id="55" symbol="changeTeamName"/>
         <entry id="8389541" method="true" symbol="onCancel"/>
         <entry id="19" object="true" symbol="Football_Score_TrackerSetTimerView"/>
         <entry id="15" object="true" symbol="Football_Score_TrackerChooseTeamMenuDelegate"/>
-        <entry id="48" method="true" symbol="changeTeam"/>
+        <entry id="49" method="true" symbol="changeTeam"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="8389109" method="true" symbol="onMenuItem"/>
@@ -354,7 +355,7 @@
         <entry id="8390514" method="true" symbol="update"/>
         <entry id="8388635" module="true" symbol="Application"/>
         <entry id="9" object="true" symbol="Football_Score_TrackerView"/>
-        <entry id="50" method="true" symbol="resetTimer"/>
+        <entry id="51" method="true" symbol="resetTimer"/>
     </symbolTable>
     <localVars>
         <entry arg="true" endPc="268435521" name="dc" stackId="1" startPc="268435479"/>
@@ -392,14 +393,14 @@
         <entry arg="true" endPc="268440579" name="dc" stackId="1" startPc="268440537"/>
         <entry arg="true" endPc="268441113" name="dc" stackId="1" startPc="268440865"/>
         <entry endPc="268441641" name="vibeData" stackId="1" startPc="268441237"/>
-        <entry endPc="268441960" name="vibeData1" stackId="1" startPc="268441646"/>
-        <entry arg="true" endPc="268442201" name="keyEvent" stackId="1" startPc="268442141"/>
-        <entry arg="true" endPc="268442261" name="keyEvent" stackId="1" startPc="268442201"/>
-        <entry arg="true" endPc="268442818" name="keyEvent" stackId="1" startPc="268442261"/>
-        <entry endPc="268442999" name="rez_cmp_local_text_9174759851" stackId="2" startPc="268442830"/>
-        <entry arg="true" endPc="268443000" name="dc" stackId="1" startPc="268442818"/>
-        <entry endPc="268443181" name="rez_cmp_local_text_6498824275" stackId="2" startPc="268443012"/>
-        <entry arg="true" endPc="268443182" name="dc" stackId="1" startPc="268443000"/>
+        <entry endPc="268441896" name="vibeData1" stackId="1" startPc="268441646"/>
+        <entry arg="true" endPc="268442137" name="keyEvent" stackId="1" startPc="268442077"/>
+        <entry arg="true" endPc="268442197" name="keyEvent" stackId="1" startPc="268442137"/>
+        <entry arg="true" endPc="268442754" name="keyEvent" stackId="1" startPc="268442197"/>
+        <entry endPc="268442935" name="rez_cmp_local_text_1067171225" stackId="2" startPc="268442766"/>
+        <entry arg="true" endPc="268442936" name="dc" stackId="1" startPc="268442754"/>
+        <entry endPc="268443117" name="rez_cmp_local_text_2009113342" stackId="2" startPc="268442948"/>
+        <entry arg="true" endPc="268443118" name="dc" stackId="1" startPc="268442936"/>
     </localVars>
     <annotations/>
     <dataEntryOffsetMappings>
@@ -415,14 +416,14 @@
         <dataEntry offset="670" parentId="Rez" symbolId="JsonData" type="module"/>
         <dataEntry offset="701" parentId="Rez" symbolId="Strings" type="module"/>
         <dataEntry offset="804" parentId="globals" symbolId="Football_Score_TrackerDelegate" type="class"/>
-        <dataEntry offset="923" parentId="globals" symbolId="Football_Score_TrackerView" type="class"/>
-        <dataEntry offset="1042" parentId="globals" symbolId="Football_Score_TrackerSetIntervalDelegate" type="class"/>
-        <dataEntry offset="1137" parentId="globals" symbolId="Football_Score_TrackerApp" type="class"/>
-        <dataEntry offset="1216" parentId="globals" symbolId="Football_Score_TrackerChooseTeamMenuDelegate" type="class"/>
-        <dataEntry offset="1279" parentId="globals" symbolId="Football_Score_TrackerMenuDelegate" type="class"/>
-        <dataEntry offset="1350" parentId="globals" symbolId="Football_Score_TrackerSetIntervalView" type="class"/>
-        <dataEntry offset="1453" parentId="globals" symbolId="ChangeTeamPicker" type="class"/>
-        <dataEntry offset="1524" parentId="globals" symbolId="Football_Score_TrackerSetTimerDelegate" type="class"/>
+        <dataEntry offset="931" parentId="globals" symbolId="Football_Score_TrackerView" type="class"/>
+        <dataEntry offset="1050" parentId="globals" symbolId="Football_Score_TrackerSetIntervalDelegate" type="class"/>
+        <dataEntry offset="1145" parentId="globals" symbolId="Football_Score_TrackerApp" type="class"/>
+        <dataEntry offset="1224" parentId="globals" symbolId="Football_Score_TrackerChooseTeamMenuDelegate" type="class"/>
+        <dataEntry offset="1287" parentId="globals" symbolId="Football_Score_TrackerMenuDelegate" type="class"/>
+        <dataEntry offset="1358" parentId="globals" symbolId="Football_Score_TrackerSetIntervalView" type="class"/>
+        <dataEntry offset="1461" parentId="globals" symbolId="ChangeTeamPicker" type="class"/>
+        <dataEntry offset="1532" parentId="globals" symbolId="Football_Score_TrackerSetTimerDelegate" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" name="initialize" parent="Football_Score_TrackerView">
