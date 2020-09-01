@@ -35,7 +35,7 @@ class Football_Score_TrackerApp extends Application.AppBase {
     	App.getApp().setProperty("team1", App.Storage.getValue("team1"));
     }
     
-    if (App.Storage.getValue("team12") == null) {
+    if (App.Storage.getValue("team2") == null) {
     	App.getApp().setProperty("team2", "ROW  ");
     } else {
     	App.getApp().setProperty("team2", App.Storage.getValue("team2"));
@@ -50,7 +50,6 @@ class Football_Score_TrackerApp extends Application.AppBase {
 
     // onStop() is called when your application is exiting
     function onStop(state) {
-    	App.Storage.setValue("timer", App.getApp().getProperty("timer"));
     	App.Storage.setValue("team1", App.getApp().getProperty("team1"));
     	App.Storage.setValue("team2", App.getApp().getProperty("team2"));
     

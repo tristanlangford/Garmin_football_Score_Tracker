@@ -1,6 +1,8 @@
 <menu id="MainMenu">
 	<menu-item id="changeTeamName" label="@Strings.ChangeTeamName" />
 	<menu-item id="setTimer" label="@Strings.SetTimer" />
-	<menu-item id="reset" label="@Strings.Reset" />
+	<menu-item id="setIntervals" label="@Strings.SetIntervals" />
+	<menu-item id="resetTimer" label="@Strings.ResetTimer" />
+	<menu-item id="resetAll" label="@Strings.ResetAll" />
     <menu-item id="quit" label="@Strings.Quit" />
 </menu>

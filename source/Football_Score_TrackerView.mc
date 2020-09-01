@@ -8,6 +8,7 @@ class Football_Score_TrackerView extends WatchUi.View {
 	hidden var myText;
 	var teams;
 	var timer;
+	var interval;
 	
 
     function initialize() {
@@ -76,11 +77,23 @@ class Football_Score_TrackerView extends WatchUi.View {
 	        :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
 	        :locY=>180
 	    });
+	    
+	    var interval = 
+	    	new WatchUi.Text({
+	        :text=>secondsToTimeString(App.Storage.getValue("interval")),
+	        :color=>Graphics.COLOR_BLACK,
+	        :font=>Graphics.FONT_SMALL,
+	        :locX =>5,
+	        :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+	        });
         
         myText.draw(dc);
         teams.draw(dc);
         timer.draw(dc);
         clock.draw(dc);
+        if (App.Storage.getValue("interval") !=0 ) {
+        	interval.draw(dc);
+        }
         
        
     }

@@ -1,12 +1,77 @@
 using Toybox.WatchUi;
+using Toybox.Application as App;
 using Toybox.Timer;
 using Toybox.System;
-using Toybox.Application as App;
 
-class Football_Score_TrackerSetTimerView extends WatchUi.View {
+var interval = App.Storage.getValue("timer") / 2;
 
-var myText;
-var timer;
+class Football_Score_TrackerSetIntervalDelegate extends WatchUi.BehaviorDelegate {
+
+    function initialize() {
+    	if (App.Storage.getValue("interval") != 0) {
+    		interval = App.Storage.getValue("interval");
+    	}
+        BehaviorDelegate.initialize();
+    }
+
+    function onMenu() {
+        return true;
+    }
+    
+    function timerMinus() {
+    	if (interval % 60 != 0) {
+    		interval -= 150;
+    	} else if (interval > 600) {
+    		interval -= 300;
+    	} else if (interval > 0) {
+    		interval -= 60;
+    	} else { 
+    		return;
+    	}
+    }
+    
+    function timerPlus() {
+    	if (interval >= 600 && (interval + 300) < (App.Storage.getValue("timer") / 2)) {
+    		interval += 300;
+    	} else if (interval < 600) {
+    		interval += 60;
+    	} else if (interval + 300 >= App.Storage.getValue("timer") / 2) {
+    		interval = App.Storage.getValue("timer") / 2;
+    	} else { 
+    		return;
+    	}
+    }
+    
+    function onKey(keyEvent) {    
+        if (keyEvent.getKey() == 13) {
+        	timerPlus();
+        } else if (keyEvent.getKey() == 8) {
+        	timerMinus();
+      	} 
+        WatchUi.requestUpdate();
+        return true;
+	}
+	
+	function onBack() {
+	
+	}
+    	
+	function onSelect() {
+		App.Storage.setValue("interval", interval);
+		var vibeData =
+				    [
+				        new Attention.VibeProfile(50, 2000), // On for two seconds
+				    ];
+		Attention.vibrate(vibeData);
+		return true;
+	}
+
+}
+
+class Football_Score_TrackerSetIntervalView extends WatchUi.View {
+
+	var myText;
+	var timer;
 
     function initialize() {
         View.initialize();
@@ -32,7 +97,7 @@ var timer;
     function onShow() {
     
     myText = new WatchUi.Text({
-            :text=>"Set Timer",
+            :text=>"Set Intervals",
             :color=>Graphics.COLOR_BLACK,
             :font=>Graphics.FONT_LARGE,
             :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
@@ -40,12 +105,13 @@ var timer;
         });
     
     timer = new WatchUi.Text({
-	            :text=>secondsToTimeString(App.getApp().getProperty("timer")),
+	            :text=>secondsToTimeString(interval),
 	            :color=>Graphics.COLOR_BLACK,
 	            :font=>Graphics.FONT_LARGE,
 	            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
 	            :locY=>WatchUi.LAYOUT_VALIGN_CENTER
 	        });
+	        
     
     }
 	
@@ -56,7 +122,7 @@ var timer;
         dc.clear();
         
         timer = new WatchUi.Text({
-	            :text=>secondsToTimeString(App.getApp().getProperty("timer")),
+	            :text=>secondsToTimeString(interval),
 	            :color=>Graphics.COLOR_BLACK,
 	            :font=>Graphics.FONT_LARGE,
 	            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,

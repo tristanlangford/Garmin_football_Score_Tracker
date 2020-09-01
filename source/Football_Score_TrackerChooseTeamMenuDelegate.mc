@@ -4,8 +4,6 @@ using Toybox.Application as App;
 
 class Football_Score_TrackerChooseTeamMenuDelegate extends WatchUi.MenuInputDelegate {
 
-	var team;
-
     function initialize() {
         MenuInputDelegate.initialize();
     }
@@ -26,7 +24,6 @@ class Football_Score_TrackerChooseTeamMenuDelegate extends WatchUi.MenuInputDele
                     WatchUi.SLIDE_DOWN
                 );
     }
-
 }
 
 class ChangeTeamPicker extends WatchUi.TextPickerDelegate {
@@ -39,7 +36,10 @@ class ChangeTeamPicker extends WatchUi.TextPickerDelegate {
     }
 
     function onTextEntered(text, changed) {
-        App.getApp().setProperty(teamName, text);
+    	if (text.length() > 5) {
+    		text = text.substring(0, 4) + "...";
+    	}
+        return App.getApp().setProperty(teamName, text);
     }
 
     function onCancel() {
