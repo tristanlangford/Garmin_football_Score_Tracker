@@ -65,7 +65,7 @@ class Football_Score_TrackerView extends WatchUi.View {
         myText = new WatchUi.Text({
             :text=>App.getApp().getProperty("team1Score") + " : " + App.getApp().getProperty("team2Score"),
             :color=>Graphics.COLOR_BLACK,
-            :font=>Graphics.FONT_LARGE,
+            :font=>Graphics.FONT_NUMBER_HOT,
             :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
             :locY=>100
         });
@@ -82,9 +82,9 @@ class Football_Score_TrackerView extends WatchUi.View {
 	    	new WatchUi.Text({
 	        :text=>secondsToTimeString(App.Storage.getValue("interval")),
 	        :color=>Graphics.COLOR_BLACK,
-	        :font=>Graphics.FONT_SMALL,
+	        :font=>Graphics.FONT_XTINY,
 	        :locX =>5,
-	        :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+	        :locY=>95
 	        });
         
         myText.draw(dc);

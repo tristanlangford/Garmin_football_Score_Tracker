@@ -80,13 +80,13 @@ class Football_Score_TrackerSetTimerView extends WatchUi.View {
             :color=>Graphics.COLOR_BLACK,
             :font=>Graphics.FONT_LARGE,
             :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
-            :locY=>50
+            :locY=>40
         });
     
     timer = new WatchUi.Text({
 	            :text=>secondsToTimeString(setTimer),
 	            :color=>Graphics.COLOR_BLACK,
-	            :font=>Graphics.FONT_LARGE,
+	            :font=>Graphics.FONT_NUMBER_HOT,
 	            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
 	            :locY=>WatchUi.LAYOUT_VALIGN_CENTER
 	        });
@@ -102,7 +102,7 @@ class Football_Score_TrackerSetTimerView extends WatchUi.View {
         timer = new WatchUi.Text({
 	            :text=>secondsToTimeString(setTimer),
 	            :color=>Graphics.COLOR_BLACK,
-	            :font=>Graphics.FONT_LARGE,
+	            :font=>Graphics.FONT_NUMBER_HOT,
 	            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
 	            :locY=>WatchUi.LAYOUT_VALIGN_CENTER
 	        }); 
