@@ -1,6 +1,6 @@
 using Toybox.WatchUi;
-using Toybox.System;
 using Toybox.Application as App;
+using Toybox.WatchUi as Ui;
 
 class Football_Score_TrackerChooseTeamMenuDelegate extends WatchUi.MenuInputDelegate {
 
@@ -17,12 +17,17 @@ class Football_Score_TrackerChooseTeamMenuDelegate extends WatchUi.MenuInputDele
         return true;
     }
     
-    function changeTeam(team) {
-    	WatchUi.pushView(
-                    new WatchUi.TextPicker(""),
-                    new ChangeTeamPicker(team),
-                    WatchUi.SLIDE_DOWN
-                );
+    function changeTeam(team) { // no TextPicker launches triggers charecter picker
+    	if (Ui has :TextPicker) {
+	    	WatchUi.pushView(
+	                    new WatchUi.TextPicker(""),
+	                    new ChangeTeamPicker(team),
+	                    WatchUi.SLIDE_DOWN
+	                );
+        } else {
+        	var picker = new StringPicker(team);
+            Ui.pushView(picker, new AccountCreateFromPickerDelegate(picker), Ui.SLIDE_IMMEDIATE);
+        }
     }
 }
 
@@ -35,7 +40,7 @@ class ChangeTeamPicker extends WatchUi.TextPickerDelegate {
         teamName = team;  	
     }
 
-    function onTextEntered(text, changed) {
+    function onTextEntered(text, changed) { // shortens team name for view
     	if (text.length() > 5) {
     		text = text.substring(0, 4) + "...";
     	}
