@@ -18,8 +18,9 @@ class Football_Score_TrackerApp extends Application.AppBase {
     // onStart() is called on application start up
     function onStart(state) {
     
-    var myTimer = new Timer.Timer();
+    var myTimer = new Timer.Timer(); // timer for refreshing view for clock
     
+    // get data from storage, or set values if no storage data
     if (App.Storage.getValue("interval") == null) {
     	App.Storage.setValue("interval", 0);
     }
@@ -51,7 +52,7 @@ class Football_Score_TrackerApp extends Application.AppBase {
     
     App.getApp().setProperty("backPressed", false);
     
-    myTimer.start(method(:update), 1000, true);
+    myTimer.start(method(:update), 1000, true); // start timer for clock
     }
 
     // onStop() is called when your application is exiting

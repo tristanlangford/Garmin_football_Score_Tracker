@@ -1,11 +1,11 @@
 using Toybox.WatchUi;
 using Toybox.Timer;
-using Toybox.System;
 using Toybox.Application as App;
+using Toybox.WatchUi as Ui;	
 
 class Football_Score_TrackerView extends WatchUi.View {
 
-	hidden var myText;
+	hidden var scores;
 	var teams;
 	var timer;
 	var interval;
@@ -62,13 +62,23 @@ class Football_Score_TrackerView extends WatchUi.View {
             :locY=>15
         });
         
-        myText = new WatchUi.Text({
+        if (Ui has :TextPicker) {  // checks if the watch is Vivoactive that doesnt work with FONT_NUMBER_HOT
+	        scores = new WatchUi.Text({
+	            :text=>App.getApp().getProperty("team1Score") + " : " + App.getApp().getProperty("team2Score"),
+	            :color=>Graphics.COLOR_BLACK,
+	            :font=>Graphics.FONT_NUMBER_HOT,
+	            :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
+	            :locY=>100
+	        });
+        } else {
+        	scores = new WatchUi.Text({
             :text=>App.getApp().getProperty("team1Score") + " : " + App.getApp().getProperty("team2Score"),
             :color=>Graphics.COLOR_BLACK,
-            :font=>Graphics.FONT_NUMBER_HOT,
+            :font=>Graphics.FONT_NUMBER_MEDIUM,
             :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
             :locY=>100
         });
+        }
 	        
 	    timer = new WatchUi.Text({
 	        :text=>secondsToTimeString(App.getApp().getProperty("timer")),
@@ -87,7 +97,7 @@ class Football_Score_TrackerView extends WatchUi.View {
 	        :locY=>95
 	        });
         
-        myText.draw(dc);
+        scores.draw(dc);
         teams.draw(dc);
         timer.draw(dc);
         clock.draw(dc);

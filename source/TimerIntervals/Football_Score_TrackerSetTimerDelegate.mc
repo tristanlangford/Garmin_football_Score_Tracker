@@ -16,7 +16,7 @@ class Football_Score_TrackerSetTimerDelegate extends WatchUi.BehaviorDelegate {
     }
     
     function onKey(keyEvent) {    
-        if (keyEvent.getKey() == 13) {
+        if (keyEvent.getKey() == 13) { // 5mins increments
         	setTimer += 300;
         } else if (keyEvent.getKey() == 8 && setTimer > 300) {
         	setTimer -= 300;
@@ -25,24 +25,35 @@ class Football_Score_TrackerSetTimerDelegate extends WatchUi.BehaviorDelegate {
         return true;
 	}
 	
+	function onSwipe(swipeEvent) {  // 5mins increments (Vivoactive)
+		swipeEvent.getDirection();
+    	if (swipeEvent.getDirection() == 0) {
+    		setTimer += 300;
+    	} else if (swipeEvent.getDirection() == 2) {
+    		setTimer -= 300;
+    	} 
+    	WatchUi.requestUpdate();
+        return true;
+    }
+	
 	function onBack() {
 	
 	}
     	
 	function onSelect() {
-		var vibeData =
+		var vibeData = // vibrate for confirmation
 				    [
 				        new Attention.VibeProfile(50, 500), // On for two seconds
 				    ];
 		Attention.vibrate(vibeData);
-		 App.Storage.setValue("timer", setTimer);
-		 App.getApp().setProperty("timer", setTimer);
-		if (App.Storage.getValue("interval") * 2 > App.Storage.getValue("timer")) {
+		App.Storage.setValue("timer", setTimer);
+		App.getApp().setProperty("timer", setTimer);
+		if (App.Storage.getValue("interval") * 2 > App.Storage.getValue("timer")) { // if interval > timer/2, reset interval to timer/2
 			App.Storage.setValue("interval", App.Storage.getValue("timer") / 2);
 		} else if (App.Storage.getValue("timer") == 300) {
 			App.Storage.setValue("interval", 0);
 		} 
-		App.getApp().setProperty("currentInterval", setTimer - App.Storage.getValue("interval"));
+		App.getApp().setProperty("currentInterval", setTimer - App.Storage.getValue("interval")); // set first interval
 	}
 
 }
@@ -56,7 +67,7 @@ class Football_Score_TrackerSetTimerView extends WatchUi.View {
         View.initialize();
     }
     
-       function secondsToTimeString(totalSeconds) {
+       function secondsToTimeString(totalSeconds) {  // format time view
        if (totalSeconds % 60 != 0) { App.Storage.setValue("timer", 3600); }
 		var minutes = (totalSeconds / 60).toNumber();
 		var seconds = totalSeconds - minutes * 60;

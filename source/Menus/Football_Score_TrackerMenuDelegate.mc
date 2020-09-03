@@ -1,5 +1,4 @@
 using Toybox.WatchUi;
-using Toybox.System;
 using Toybox.Application as App;
 
 class Football_Score_TrackerMenuDelegate extends WatchUi.MenuInputDelegate {
